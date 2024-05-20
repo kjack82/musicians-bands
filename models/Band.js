@@ -1,10 +1,10 @@
 const {Sequelize, sequelize} = require('../db');
 
-let Band = sequelize.define("band", {
-    name: DataTypes.STRING,
-    genre: DataTypes.STRING
+let Band = sequelize.define("Band", {
+    name: Sequelize.STRING,
+    genre: Sequelize.STRING
 })
 
 module.exports = {
-    Band
+    Band,
 };

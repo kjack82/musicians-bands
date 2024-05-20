@@ -1,12 +1,12 @@
 const {Sequelize, sequelize} = require('../db');
 
 // TODO - define the Song model
-let Song = sequelize.define("song", {
-    title: DataTypes.STRING,
-    year: DataTypes.INTEGER,
-    length: DataTypes.INTEGER
+let Song = sequelize.define("Song", {
+    title: Sequelize.STRING,
+    year: Sequelize.INTEGER,
+    length: Sequelize.INTEGER
 })
 
 module.exports = {
-    Song
+    Song,
 };
